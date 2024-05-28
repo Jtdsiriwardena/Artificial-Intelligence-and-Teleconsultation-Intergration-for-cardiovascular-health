@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/consultation.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <h1 id="heading">
+        <span class="first">Preparing for your</span> 
+        <span class="second">Tele-Consultation visit</span>
+      </h1>
+    <div class="container">
+        <div class="left">
+            <img src="{{ url_for('static', filename='images/ready3.jpg') }}">
+        
+        </div>
+        
+        <div class="right">
+            <div class="icons">
+
+              <!--Inline css for icons-->
+              <div class="icon">
+                <span style="border: 1px solid black; padding: 15px 18px 15px 18px;
+                border-radius: 5px; background-color: rgb(55, 193, 176);">
+                <i class="fas fa-tshirt"></i>
+                </span>
+                <div>
+                  <h3 class="icon-heading">Clothing</h3>
+                  <p class="icon-description">Loose-fitting clothing to promote comfort and circulation.<br> 
+                    Avoid tight clothing that may restrict blood flow</p>
+                </div>
+              </div>
+
+
+              <div class="icon">
+                <span style="border: 1px solid black; padding: 15px 24px 15px 24px;
+                border-radius: 5px; background-color: rgb(55, 193, 176);">
+                <i class="far fa-lightbulb"></i>
+            </span>
+                <div>
+                  <h3 class="icon-heading">Lighting</h3>
+                  <p class="icon-description">Ensure adequate lighting in the room to avoid glare or shadows on the screen.<br>
+                    Position lights behind or beside the screen, not directly in front.<br></p>
+                </div>
+              </div>
+
+
+              <div class="icon">
+                <span style="border: 1px solid black; padding: 15px 18px 15px 18px;
+                border-radius: 5px; background-color: rgb(55, 193, 176);">
+                <i class="fas fa-laptop"></i>
+                </span>
+                <div>
+                  <h3 class="icon-heading">PC/Laptop</h3>
+                  <p class="icon-description">Place your PC/laptop on a stable surface at eye level to reduce strain on your neck and back.<br>
+                    Keep the keyboard and screen clean and free of dust.<br></p>
+                </div>
+              </div>
+
+
+              <div class="icon">
+                <span style="border: 1px solid black; padding: 15px 22px 15px 22px;
+                border-radius: 5px; background-color: rgb(55, 193, 176);">
+                <i class="fas fa-user"></i>
+                </span>
+                <div>
+                  <h3 class="icon-heading">Assistance</h3>
+                  <p class="icon-description">Ideally, you should have a second person nearby to assist in tasks</p>
+                </div>
+              </div>
+
+
+              <!--what you will need and click here button-->
+              <div class="info">
+                <h1 id="info-heading">What you'll need</h1>
+                <ul>
+                    <li>List of all of your medications and/or current pill bottles</li> <br>
+                    <li>If diabetic, list of your glucometer readings</li> <br>
+                    <li>If possible, check your blood pressure and weight prior to visit</li>
+                </ul>
+            </div>
+            <a href="http://127.0.0.1:8000/join/">
+                <button>Click Here</button>
+            </a>
+            
+            
+            </div>
+          </div>
+        </div>
+</body>
+</html>
